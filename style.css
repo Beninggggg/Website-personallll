@@ -1,0 +1,158 @@
+/* Import Google Font as fonts */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+* {
+    /* Menghapus padding dan margin default web */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Mengatur body text */
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+}
+
+h2.nerko-one-regular {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3, h4, h5, h6 {
+    /* Mengatur Heading text */
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+}
+
+p {
+    font-size: 1rem; /* 1rem = 16px */
+    line-height: 1.5rem;
+}
+
+p, span, input, label, a {
+    color: #4093c7;
+}
+
+a {
+    /* Menghapus underline element */
+    text-decoration: none;
+}
+
+/* Styling navbar */
+.header-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0; /* Mengubah padding menjadi vertikal dan horizontal */
+}
+
+.nav-container ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.6rem; 
+}
+
+.nav-logo a {
+    color: #12c5dd;
+}
+
+.nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li a {
+    color: #2db4a2;
+}
+
+/* Memberikan Behaviour Hover */
+.nav-item:hover {
+    color: #2bbfbf;
+}
+
+/* Sibling CSS */
+.nav-list:hover:not(:hover) {
+    opacity: 0.5;
+}
+
+/* Styling Hero Section */
+#hero-header {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.name {
+    color: #2a84bc;
+}
+
+.hero-right { 
+    background-color: #0f7070;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-right img { 
+    height: auto;
+    width: auto;
+}
+
+/* Style button */
+.btn-link {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.btn-primary {
+    background-color: #0f7070;
+    color: white;
+    padding: 0.9rem 1rem;
+}
+
+.btn-outline {
+    border: solid 1px #2a84bc; /* Mengubah 'Border' menjadi 'border' */
+    padding: 0.9rem 1rem; /* Mengubah 'Padding' menjadi 'padding' */
+    color: #2a84bc; /* Mengubah 'Color' menjadi 'color' */
+}
+
+/* Efek hover untuk tombol primary dan outline */
+.btn-primary:hover {
+    background-color: #2a84bc;
+    color: white;
+}
+
+.social-media {
+    display: flex; /* Mengubah 'Display' menjadi 'display' */
+    gap: 1rem; /* Mengubah 'Gap' menjadi 'gap' */
+}
+
+.social-media i {
+    font-size: 25px; 
+}
+
+.social-media .btn-primary {
+    border-radius: 5px;
+}
